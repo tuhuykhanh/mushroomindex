@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+
+*
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border:none;
+    text-transform:capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+    font-family: 'poppins',sans-serif;
+    
+}
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --bg-right:#421D2C;
+    --bg-left:#5F2E41;
+    --footer:#2C121B;
+    --hover:#FB9E66;
+    
+}
+section ,header{
+    padding: 5rem 15%;
+}
+
+.btn
+{
+    background-color: var(--btn);
+}
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.main .main-left
+{
+    flex: 1 1 42rem;
+    background-color: var(--bg-left);
+
+}
+.main .main-left img
+{
+    width:100%;
+    object-fit:cover;
+}
+ 
+.main .main-right 
+{
+    flex:1 1 42rem;
+    background-color: var(--bg-right);
+}
+.main .main-right .header{
+    color:white;
+    font-size: 2rem;
+}
+.main .main-right .header .navbar a
+{
+    color:white;
+    margin-right: 2rem;
+}
+.main .main-right .header .navbar a:hover
+{
+    color:var(--hover);
+}
+.main .main-right .home .title
+{
+    font-size: 4rem;
+    line-height: 1.2;
+    color:white;
+    margin-bottom: 4rem;
+}
+.main .main-right .home .title span
+{
+    color: var(--hover);
+}
+.main .main-right .home .content
+{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+.main .main-right .home .btn
+{
+    padding: 2rem 4rem;
+    font-size: 3rem;
+    border-radius: 4rem;
+    background-image: linear-gradient(to right,#DB494A,#EB6B50);
+    display:inline-block;
+    cursor: pointer;
+}
+.main .main-right .home .btn:hover
+{
+    transform:scale(1.1);
+}
+.main .main-right .home .btn a
+{
+    display: inline-block;
+    color:white;
+}
+.main .main-right .footer
+{
+    background-color: var(--footer);
+}
+.main .main-right .footer .social
+{
+            display: flex;
+            font-size: 2rem;
+
+}
+.main .main-right .footer .social a
+{
+    color:white;
+    margin-right: 5rem;
+    
+}
+@media (max-width:1200px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+}
+
+
+@media (max-width:768px)
+{
+    .main .main-right .header .navbar a
+    {
+        color:white;
+        margin-right: 1.5rem;
+    }
+    .main .main-right .footer .social a
+    {
+        color:white;
+        margin-right: 2rem;   
+    }
+    .main
+    {
+        flex-direction: column-reverse;
+    }
+
+}
+@media (max-width:450px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+    section ,header{
+        padding: 3rem 3rem;
+    }
+
+}
